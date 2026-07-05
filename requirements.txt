@@ -1,0 +1,6 @@
+gymnasium[classic-control,mujoco]
+stable-baselines3[extra]
+pyyaml
+numpy
+imageio
+imageio-ffmpeg

@@ -1,0 +1,14 @@
+# Minimal PPO training config.
+# Start with CartPole-v1. For continuous control, try Pendulum-v1.
+env_id: CartPole-v1
+total_timesteps: 20000
+seed: 42
+model_path: outputs/ppo_cartpole.zip
+log_dir: outputs/logs
+
+ppo:
+  learning_rate: 0.0003
+  n_steps: 2048
+  batch_size: 64
+  n_epochs: 10
+  gamma: 0.99
