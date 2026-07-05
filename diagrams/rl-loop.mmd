@@ -1,0 +1,9 @@
+flowchart LR
+    O[Observation<br/>状態の観測] --> P[Policy<br/>方策]
+    P --> A[Action<br/>行動]
+    A --> E[Environment<br/>環境]
+    E --> R[Reward<br/>報酬]
+    E --> N[Next Observation<br/>次の観測]
+    R --> U[PPO Update<br/>方策更新]
+    N --> P
+    U --> P

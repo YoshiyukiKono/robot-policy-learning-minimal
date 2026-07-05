@@ -1,0 +1,7 @@
+flowchart TD
+    C[configs/ppo.yaml] --> T[train_ppo.py]
+    T --> M[outputs/ppo_cartpole.zip]
+    M --> E[evaluate.py]
+    M --> V[record_video.py]
+    E --> S[reward / episode length]
+    V --> MP4[outputs/videos/*.mp4]
